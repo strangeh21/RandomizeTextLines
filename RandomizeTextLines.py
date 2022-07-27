@@ -5,10 +5,10 @@ import os
 
 def main():
     file = sys.argv[1]
-    return_filelist_randomized(file)
+    randomize_text_lines(file)
 
 
-def return_filelist_randomized(file):
+def randomize_text_lines(file):
     num = 0
     with open(file, "r") as f:
         results = [line.strip() for line in f]
